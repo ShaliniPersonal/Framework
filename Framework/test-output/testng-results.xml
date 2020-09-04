@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="10818" started-at="2020-09-02T20:23:26Z" finished-at="2020-09-02T20:23:37Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="10818" started-at="2020-09-02T20:23:26Z" finished-at="2020-09-02T20:23:37Z">
+      <class name="com.learn_automation.testCases.LogintoCRM">
+        <test-method status="PASS" signature="setUpSuite()[pri:0, instance:com.learn_automation.testCases.LogintoCRM@3bfdc050]" name="setUpSuite" is-config="true" duration-ms="814" started-at="2020-09-02T20:23:25Z" finished-at="2020-09-02T20:23:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpSuite -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.learn_automation.testCases.LogintoCRM@3bfdc050]" name="setUp" is-config="true" duration-ms="10665" started-at="2020-09-02T20:23:26Z" finished-at="2020-09-02T20:23:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="FAIL" signature="loginAPP()[pri:0, instance:com.learn_automation.testCases.LogintoCRM@3bfdc050]" name="loginAPP" duration-ms="75" started-at="2020-09-02T20:23:37Z" finished-at="2020-09-02T20:23:37Z">
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+at com.learn_automation.utility.ExcelDataProvider.getStringData(ExcelDataProvider.java:29)
+at com.learn_automation.testCases.LogintoCRM.loginAPP(LogintoCRM.java:19)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginAPP -->
+        <test-method status="FAIL" signature="tearDownMethod(org.testng.ITestResult)[pri:0, instance:com.learn_automation.testCases.LogintoCRM@3bfdc050]" name="tearDownMethod" is-config="true" duration-ms="13" started-at="2020-09-02T20:23:37Z" finished-at="2020-09-02T20:23:37Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=loginAPP status=FAILURE method=LogintoCRM.loginAPP()[pri:0, instance:com.learn_automation.testCases.LogintoCRM@3bfdc050] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+at com.learn_automation.utility.Helper.captureScreenshot(Helper.java:14)
+at com.learn_automation.pages.BaseClass.tearDownMethod(BaseClass.java:47)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:646)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownMethod -->
+        <test-method status="SKIP" signature="tearDown()[pri:0, instance:com.learn_automation.testCases.LogintoCRM@3bfdc050]" name="tearDown" is-config="true" duration-ms="0" started-at="2020-09-02T20:23:37Z" finished-at="2020-09-02T20:23:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.learn_automation.testCases.LogintoCRM -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
