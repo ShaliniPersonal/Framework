@@ -12,6 +12,7 @@ import org.openqa.selenium.io.FileHandler;
 
 public class Helper {
 	
+	//This is a new comment to check commit
 	public static String captureScreenshot(WebDriver driver)
 	{
 		File src = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
