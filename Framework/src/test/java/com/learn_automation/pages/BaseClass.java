@@ -8,6 +8,7 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeSuite;
+import org.testng.annotations.Parameters;
 
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
@@ -22,7 +23,7 @@ public class BaseClass {
 
 	WebDriver driver;
 	public ConfigDataProvider config;
-	public ExcelDataProvider excel;
+//	public ExcelDataProvider excel;
 	public ExtentReports report;
 	public ExtentTest logger;
 	
@@ -30,17 +31,18 @@ public class BaseClass {
 	public void setUpSuite()
 	{
 		config= new ConfigDataProvider();
-		excel = new ExcelDataProvider();
+//		excel = new ExcelDataProvider();
 		
 		ExtentHtmlReporter extenthtml = new ExtentHtmlReporter(new File(System.getProperty("user.dir")+ "/Reports/CRMLogin_" + Helper.getCurrentDateandTime() + ".html"));
 		report = new ExtentReports();
 		report.attachReporter(extenthtml);
 	}
 	
+	@Parameters({"browser","urlTobeTested"})
 	@BeforeClass
-	public void setUp()
+	public void setUp(String browser, String url)
 	{
-		BrowserFactory.startApplication(config.getBrowser(), config.getURL());
+		BrowserFactory.startApplication(browser, url);
 		
 	}
 	

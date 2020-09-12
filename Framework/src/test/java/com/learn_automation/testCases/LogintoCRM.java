@@ -20,7 +20,9 @@ public class LogintoCRM extends BaseClass{
 		
 		logger.info("Start application");
 		
-		loginobj.loginCRM(excel.getStringData("Sheet1", 0, 0), excel.getStringData("Sheet1", 0, 1));
+//		loginobj.loginCRM(excel.getStringData("Sheet1", 0, 0), excel.getStringData("Sheet1", 0, 1));
+		
+		loginobj.loginCRM("Selenium_50", "Abcd@123456");
 		
 		logger.pass("Login Success");
 		
